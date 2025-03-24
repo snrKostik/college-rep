@@ -1,0 +1,10 @@
+BasedOnStyle: LLVM
+IndentWidth: 2
+AlignAfterOpenBracket: Align
+AlignArrayOfStructures: Right
+AllowAllArgumentsOnNextLine: True
+AllowAllParametersOfDeclarationOnNextLine : True
+SpacesInContainerLiterals: True
+BreakBeforeBraces: Attach
+# BraceWrapping: True
+  # After: true

@@ -1,0 +1,10 @@
+.git/
+.idea/
+.vscode/
+cpp.code-workspace
+*.vsidx
+*.suo
+*.VC
+*.db
+.vs/
+build/
