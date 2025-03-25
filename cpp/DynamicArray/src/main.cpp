@@ -13,12 +13,18 @@ public:
       array[i] = 0;
     }
   }
-  DynamicArray(DynamicArray &obj) {
+  DynamicArray(DynamicArray const &obj) {
+    print << "copying size\n";
     _size = obj._size;
+    print << "copying array\n";
     array = obj.array;
+    print << "adding for each element 1\n";
+    for (int i{0}; i < _size; i++) {
+      obj.array[i] += 1;
+    }
   }
 
-  ~DynamicArray() {}
+  ~DynamicArray() { delete[] array; }
 
   int getEl(int el) { return array[el]; }
   void setEl(int el, int what) { array[el] = what; }
@@ -33,9 +39,10 @@ public:
 int main() {
   DynamicArray asf(12);
   asf.setEl(0, 5);
-  DynamicArray eee(asf);
   print << asf.getEl(0) << " " << asf.getEl(1) << e;
-  eee.setEl(4, 12);
+
+  DynamicArray eee(asf);
   asf.PrintArr();
+  eee.setEl(4, 12);
   eee.PrintArr();
 }
