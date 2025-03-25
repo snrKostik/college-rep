@@ -1,7 +1,6 @@
 #include "../../../../.mylibs/lifeEasier.hpp"
 #include <cstddef>
 #include <string>
-#include ""
 
 class Point {
 private:
