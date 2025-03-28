@@ -8,3 +8,4 @@ cpp.code-workspace
 *.db
 .vs/
 build/
+main
