@@ -1,6 +1,6 @@
 #include "./include/consonant.hpp"
 #include "./include/vovel.hpp"
-#include "D:/.mylibs/lifeEasier.hpp"
+#include "../../../../.mylibs/lifeEasier.hpp"
 // #include "../include\interface.hpp"
 
 int main() {

@@ -1,5 +1,5 @@
-#include "../include\interface.hpp"
-#include "D:/.mylibs/lifeEasier.hpp"
+#include "../../../../../.mylibs/lifeEasier.hpp"
+#include "./interface.hpp"
 
 class Consonant : public IstrAn {
 public:

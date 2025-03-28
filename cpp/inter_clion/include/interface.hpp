@@ -1,4 +1,4 @@
-#include "D:/.mylibs/lifeEasier.hpp"
+#include "../../../../../.mylibs/lifeEasier.hpp"
 
 #pragma once
 
