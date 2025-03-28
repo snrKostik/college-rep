@@ -27,6 +27,6 @@ int main() {
   ClassA objA(3, 5);
   ClassB objB(7, 2);
 
-  std::cout << "Сумма всех полей: " << sumFields(objA, objB) << std::endl;
+  print << "Сумма всех полей: " << sumFields(objA, objB) << e;
   return 0;
 }
