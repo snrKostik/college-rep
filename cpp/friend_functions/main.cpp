@@ -1,36 +1,32 @@
-#include "./headers/dynArray.hpp"
-#include "./headers/lifeEasier.hpp"
-#include "./headers/sort.hpp"
-#include <vector>
+#include "../../../../.mylibs/lifeEasier.hpp"
+class ClassB;
 
-using std::vector;
-
-class A {
+class ClassA {
 private:
-	vector<int> x = { 5, 6, 7 };
+  int a, b;
 
-	friend void AddTo_x(int& value);
-};
-
-class B {
-private:
-	int a;
 public:
-	void Set_a(int& value) {
-		a = value;
-	}
+  ClassA(int x, int y) : a(x), b(y) {}
+  friend int sumFields(const ClassA &objA, const ClassB &objB);
 };
 
-void AddTo_x(A& value) {
-	x.push_back(value);
+class ClassB {
+private:
+  int c, d;
+
+public:
+  ClassB(int x, int y) : c(x), d(y) {}
+  friend int sumFields(const ClassA &objA, const ClassB &objB);
+};
+
+int sumFields(const ClassA &objA, const ClassB &objB) {
+  return objA.a + objA.b + objB.c + objB.d;
 }
 
 int main() {
-	A abra;
-	B cadabra;
+  ClassA objA(3, 5);
+  ClassB objB(7, 2);
 
-	int some_value = 75;
-	cadabra.Set_a(some_value);
-
-
+  std::cout << "Сумма всех полей: " << sumFields(objA, objB) << std::endl;
+  return 0;
 }
