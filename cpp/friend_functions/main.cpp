@@ -28,5 +28,4 @@ int main() {
   ClassB objB(7, 2);
 
   print << "Сумма всех полей: " << sumFields(objA, objB) << e;
-  return 0;
 }
