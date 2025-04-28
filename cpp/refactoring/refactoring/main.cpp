@@ -5,10 +5,10 @@
 using namespace std;
 
 int main() {
-	vector< string> names;
+	vector<string> names;
 	vector<int> ages;
-	vector< string> emails;
-	vector< string> phones;
+	vector<string> emails;
+	vector<string> phones;
 	int count;
 
 	cout << "сколько людей?";
