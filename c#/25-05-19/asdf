@@ -1,0 +1,56 @@
+У вас есть список сотрудников, каждый из которых описывается следующими свойствами:
+
+Id (int) — идентификатор
+
+Name (string) — имя
+
+Department (string) — отдел
+
+Position (string) — должность
+
+Salary (decimal) — зарплата
+
+Требуется:
+Сгруппировать сотрудников сначала по отделу, затем по должности.
+
+Для каждой подгруппы (отдел + должность) вычислить среднюю зарплату.
+
+Вывести структуру:
+
+
+Отдел: IT
+  Должность: Программист
+    Средняя зарплата: 115000
+    - Иванов (120000)
+    - Смирнов (110000)
+
+
+
+        var employees = new List<Employee>
+        {
+            new Employee { Id = 1, Name = "Иванов", Department = "IT", Position = "Программист", Salary = 120000 },
+            new Employee { Id = 2, Name = "Смирнов", Department = "IT", Position = "Программист", Salary = 110000 },
+            new Employee { Id = 3, Name = "Белова", Department = "IT", Position = "Тестировщик", Salary = 90000 },
+            new Employee { Id = 4, Name = "Орлова", Department = "HR", Position = "Менеджер", Salary = 75000 },
+            new Employee { Id = 5, Name = "Кузнецов", Department = "HR", Position = "Рекрутер", Salary = 70000 },
+            new Employee { Id = 6, Name = "Петрова", Department = "Finance", Position = "Бухгалтер", Salary = 80000 },
+            new Employee { Id = 7, Name = "Федоров", Department = "Finance", Position = "Аналитик", Salary = 95000 },
+            new Employee { Id = 8, Name = "Сидоров", Department = "IT", Position = "Админ", Salary = 85000 },
+            new Employee { Id = 9, Name = "Морозова", Department = "IT", Position = "Тестировщик", Salary = 91000 },
+            new Employee { Id = 10, Name = "Григорьев", Department = "Finance", Position = "Аналитик", Salary = 97000 },
+            new Employee { Id = 11, Name = "Лебедев", Department = "HR", Position = "Менеджер", Salary = 78000 },
+            new Employee { Id = 12, Name = "Егорова", Department = "Finance", Position = "Бухгалтер", Salary = 82000 },
+            new Employee { Id = 13, Name = "Александров", Department = "IT", Position = "Программист", Salary = 115000 },
+            new Employee { Id = 14, Name = "Николаева", Department = "HR", Position = "Рекрутер", Salary = 72000 },
+            new Employee { Id = 15, Name = "Зайцев", Department = "IT", Position = "Админ", Salary = 88000 },
+            new Employee { Id = 16, Name = "Дмитриева", Department = "Sales", Position = "Менеджер по продажам", Salary = 88000 },
+            new Employee { Id = 17, Name = "Михайлов", Department = "Sales", Position = "Менеджер по продажам", Salary = 89000 },
+            new Employee { Id = 18, Name = "Волкова", Department = "Sales", Position = "Аналитик", Salary = 94000 },
+            new Employee { Id = 19, Name = "Соколова", Department = "Finance", Position = "Аналитик", Salary = 99000 },
+            new Employee { Id = 20, Name = "Баранов", Department = "Finance", Position = "Бухгалтер", Salary = 78000 },
+            new Employee { Id = 21, Name = "Попов", Department = "IT", Position = "Программист", Salary = 125000 },
+            new Employee { Id = 22, Name = "Анисимова", Department = "HR", Position = "Менеджер", Salary = 79000 },
+            new Employee { Id = 23, Name = "Ковалёв", Department = "Finance", Position = "Аналитик", Salary = 96000 },
+            new Employee { Id = 24, Name = "Тарасов", Department = "Sales", Position = "Аналитик", Salary = 93000 },
+            new Employee { Id = 25, Name = "Виноградова", Department = "Sales", Position = "Менеджер по продажам", Salary = 90000 }
+        };
