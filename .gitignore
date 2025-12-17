@@ -9,3 +9,14 @@ cpp.code-workspace
 .vs/
 build/
 main
+c#/ado2/Problem_first/bin/Debug/net9.0
+c#/ado2/Problem_first/obj/Debug/net9.0
+c#/ado2/Problem_second/bin/Debug/net9.0
+c#/ado2/Problem_second/obj/Debug/net9.0
+c#/ado2/Problem_third/bin/Debug/net9.0
+c#/ado2/Problem_third/obj/Debug/net9.0
+c#/sysprog/25-10-28/bin/Debug/net9.0
+c#/sysprog/25-10-28/obj/Debug/net9.0
+golang/multi-threaded/25-11-01
+golang/multi-threaded/25-11-01
+golang/multi-threaded/25-11-01/dictionary.txt
