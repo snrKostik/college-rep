@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задача jQuery</title>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #f4f7f6;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .wrapper {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+            align-self: flex-start;
+            max-width: 600px;
+            width: 100%;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+
+
+
+    <style>
+        .error-msg {
+            color: red;
+            display: none;
+            font-size: 12px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+
+    <a href="../index.html" class="back-link">← назад</a>
+
+    <div class="wrapper">
+
+
+        <form id="loginForm">
+            <div>
+                <input type="text" id="login" placeholder="Логин">
+                <span class="error-msg">Поле не может быть пустым</span>
+            </div>
+            <div style="margin-top: 10px;">
+                <input type="password" id="password" placeholder="Пароль">
+                <span class="error-msg">Поле не может быть пустым</span>
+            </div>
+            <button type="submit" style="margin-top: 10px;">Войти</button>
+        </form>
+
+    </div>
+
+
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
